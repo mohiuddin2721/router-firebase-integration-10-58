@@ -14,7 +14,7 @@ const useFirebase = () => {
         })
     }, []);
 
-    const googleSignOut = () => {
+    const handleSignOut = () => {
         signOut(auth)
         .then( () => {
 
@@ -41,7 +41,7 @@ const useFirebase = () => {
     return {
         user,
         setUser,
-        googleSignOut,
+        handleSignOut,
         singInWithGoogle
     }
 }
